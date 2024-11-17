@@ -27,7 +27,7 @@ const CreateAccount = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3090/register', formData);
+      const response = await axios.post('https://vercel-back-project-fresh-food.vercel.app/register', formData);
       
       // Handle success response
       if (response.data && response.data.success) {

@@ -32,7 +32,7 @@ const LoginAccount = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3090/login', formData);
+      const response = await axios.post('https://vercel-back-project-fresh-food.vercel.app/login', formData);
 
       if (response.data && response.data.success) {
         // Store both token and username

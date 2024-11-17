@@ -14,7 +14,7 @@ const ProductGrid = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:3090/products/getall')
+    axios.get('https://vercel-back-project-fresh-food.vercel.app/products/getall')
       .then((response) => {
         
         if (response.data && Array.isArray(response.data)) {
